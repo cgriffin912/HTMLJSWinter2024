@@ -36,10 +36,10 @@
     <script>
 	
 		//Store the elements (tags) in variables
-		var first = document.querySelector("first");
-		var last = document.querySelector("last");
+		var first = document.querySelector("#first").value;
+		var last = document.querySelector("#last").value;
 		//var person = document.querySelector("first" + "last")	
-		var button = document.querySelector("button");
+		var button = document.querySelector("#button");
 		
 		//console.log(first)
 		//console.log(last)
@@ -47,11 +47,11 @@
 
 		//Make an array to store the people
 
-		var people = {
+		var people = [`${first}`, `${last}`];
 
-		}
-		let array = input.split
-		console.log(array);
+		//let array = input.split
+
+		//console.log(array);
 
 		console.log(people)
 
@@ -91,7 +91,8 @@
 		}//end of person object
     
 			//Add the person object into the people array by using the .push() array method.
-		people.push("person")
+
+		people.push('person')
 
 		console.log(people)
 
@@ -128,7 +129,7 @@
 				//Loop through each property in the object
 				for(let key in people[i])
                 {
-					console.log(people[i].first, people[i].last)
+					console.log(people[i][key].first, people[i][key].last)
 					//people.forEach(function(first, last)
 					//{
 				//		console.log(first)
