@@ -114,7 +114,9 @@ function dataPrompt(){
 
     outputData.innerHTML = `Your name is ${yourName} ${yourLastName}<br>The result of your number is ${result}<br>Thanks from ${name} ${lastName}`;
     documentBody.appendChild(outputData);
-}//Example of regular string
+}
+
+//Example of regular string
 var name = "Christina";
 var lastName = "Griffin";
 //Example of string literal
